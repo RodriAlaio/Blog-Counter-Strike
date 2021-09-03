@@ -11,12 +11,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="../css/estilo.css">
     <title>Contacto</title>
 </head>
 <body>
-  <div id="contenedor">
+  
     <header>
 
       <nav class="navbar navbar-expand-lg navbar-dark 
@@ -46,44 +45,41 @@
             </div>
           </nav>
     </header>
+    <div id="contenedor" class="container">
     
     <div class="contenedorGrid">
     <div class="blockT">
     <h1 class="blockT__tituloUno blockT__tituloUno--modificador">Contacto</h1>
     </div>
     
-    <form >
-        <label for="name">Nombre:</label><br>
+    <form class="label">
+        <label for="name"></label><br>
         <input type="text" id="name" placeholder="Pon tu nombre"><br>
-        <label for="surname">Apellido:</label><br>
-        <input type="text" id="surname" placeholder="Pon tu Apellido"><br>
-        <label for="email">Ingrese su Email:</label><br>
+        <label for="email"></label><br>
         <input type="email" id="email" placeholder="Pon tu email" required><br>
-        <label for="dni">Ingrese DNI:</label><br>
-        <input type="number" id="dni" placeholder="dni sin puntos" required><br>
-        <label>Genero:</label><br>
-        <input type="radio" name="genero">Masculino<br>
-        <input type="radio" name="genero">Femenino<br>
-        <label>De que continente eres?</label><br>
+        <label class="pe" >De que continente eres?</label><br>
         <select name="" id="">
-            <option value="">Amrica</option>
+            <option value="">America</option>
             <option value="">Europa</option>
             <option value="">Africa</option>
             <option value="">Asia</option>
             <option value="">Oceania</option>
         </select>
-        <br>
+
         <p>Cual titulo de todos te gusta mas?</p>
-        <input type="checkbox" id="optionUno" name="optionUno"><label for="optionUno">Counter Strike(2000)</label><br>
-        <input type="checkbox" id="optionDos" name="optionDos"><label for="optionDos">Counter-Strike Source</label><br>
-        <input type="checkbox" id="optionTres" name="optionTres"><label for="optionTres">Counter-Strike Global Offencive</label><br>
-        <textarea name="" id="" cols="30" rows="10" placeholder="Comenta que piensas sobre el juego"></textarea><br>
+        <input type="checkbox" id="optionUno" name="optionUno"><label for="optionUno" class="pe">Counter Strike(2000)</label><br>
+        <input type="checkbox" id="optionDos" name="optionDos"><label for="optionDos" class="pe">Counter-Strike Source</label><br>
+        <input type="checkbox" id="optionTres" name="optionTres"><label for="optionTres" class="pe">Counter-Strike Global Offencive</label><br>
+        <textarea name="" id="" cols="23" rows="10" placeholder="Comenta que piensas sobre el juego"></textarea><br>
         
-        <input type="reset">
-        <input type="submit"><br> 
+        <input class="boton" type="reset">
+        <input class="boton" type="submit"><br> 
     </form>
 </div>
 </div>
+<footer>
+  <p class="footer"> Derechos Reservados | Rodrigo Alaio &copy;</p>
+</footer>
 <script src="../js/bootstrap.min.js"></script>
 </body>
 </html>

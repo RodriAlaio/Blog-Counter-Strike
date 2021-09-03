@@ -1,132 +1,151 @@
-$primary:black;
-$secundary: #2e3033;
+$primary: black;
+$secundary: #2e303342;
 
-%flexs{
+%flexs {
     display: flex;
 }
 
-%tipografia{
-    font-family: 'Lexend Deca', sans-serif;
+%tipografia {
+    font-family: "Lexend Deca", sans-serif;
 }
 
-%borde{
-    border: 1px solid;
+%borde {
+    border: 1px solid black;
 }
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+//estilo del nav de bootstrap 
+.nav-link{
+    @extend %tipografia;
 }
-
-body{
-    background-repeat:no-repeat;
+//estilos del fondo
+body {
+    background: url(../img/op3-body.jpg);
+    background-repeat: no-repeat;
     background-size: 100%;
-    background-attachment:fixed ;
-    // background:url(../img/op3-body.jpg);
+    background-attachment: fixed;
 }
 
-#contenedor{
-    margin-top: 40%;
-    margin-left: 15%;
-    margin-right: 15%;
-    border: solid darkgray;
-    background-color: $secundary;
-    display: grid;
-    grid-template-columns: auto ;
-}
-
-.blockT__tituloUno--modificador{
-    color: $primary;
-    font-size: 490%;
+//titulos principales de cada pagina
+.blockT__tituloUno--modificador {
+    color: #adb5bd;
+    font-size: 6rem;
     @extend %tipografia;
     text-align: center;
-    margin-bottom: 4%;
-    margin-top: 2%;
 }
-
-.imgIndex{
+//estilo de imagnes del index
+.imgIndex {
     @extend %flexs;
     justify-content: center;
     justify-content: space-around;
 }
-.imgIndex__img--modificador{
+.imgIndex__img--modificador {
     max-width: 340px;
     max-height: 340px;
 }
+.imgIndex__img--modificador:hover{
+    transform: scale(1.5);
 
-.subtitulo__h2--modificador{
-    color: $primary;
-    font-size:4rem;
+}
+//estilos de los sbutitulos del index
+.subtitulo__h2--modificador {
+    color: #9999a1;
+    font-size: 4rem;
     @extend %tipografia;
     text-align: center;
     margin-top: 3%;
 }
-
-p{
+//estilo del texto
+p {
     @extend %tipografia;
     font-size: 150%;
     text-align: justify;
     padding: 20px;
-    color: $primary;
+    color: #ced4da;
 }
-
-.videocs{
+//video de index
+.videocs {
     position: relative;
     overflow: hidden;
     padding: 25%;
 
-
-    iframe{
+    iframe {
         position: absolute;
         top: 0;
         left: 0;
         width: 100%;
         height: 100%;
+    }
 }
-}
-
-.tabla{ 
+//tabla del index
+.tabla {
     @extend %flexs;
-    justify-content: center; 
+    justify-content: center;
     flex-direction: row;
-    
 }
 
-.tabla__class--modificador{
+.tabla__class--modificador {
     margin-top: 10px;
     margin-bottom: 5px;
     @extend %borde;
     margin-left: 5px;
     margin-right: 5px;
 
-    th{
+    th {
         font-size: 150%;
-        color: $primary;
+        color: #6096ba;
         @extend %tipografia;
         @extend %borde;
         text-align: center;
     }
-    td{
+    td {
         @extend %borde;
         @extend %tipografia;
-        color: $primary;
-        }
+        color: #6096ba;
+    }
 }
-.imgg{
+//estilos de las imagenes la pagina Gaming
+.imgg {
     @extend %flexs;
-    justify-content: center;
-    justify-content: space-around;
-    align-items: center;
+    flex-direction: row; 
     align-items: normal;
-
-    
+    justify-content: center; 
+    align-items: center;
 }
 
-.imgg__Gaming--modificador{
-    max-width: 70%;
-    max-height: 70%;
+.imgg__Gaming--modificador {
+    max-width: 30%;
+    max-height: 30%;
 }
-
-
+.imgg__Gaming--modificador:hover{
+    transform: scale(1.5);
+}
+//area de contacto
+.label{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    @extend %tipografia;
+    font-size: 150%;
+    color: #ced4da;
+}
+//estilo de botones del formulario
+.boton{
+    border-radius: 5%;
+    background-color: darkgray;
+    color: black;
+    padding: 1% 2%;
+}
+.boton:hover{
+    background-color: black;
+    color: whitesmoke;
+}
+//estilos del pie de pagina
+.footer{
+    background-color: black;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 0%;
+    color: whitesmoke;
+}
 @import "../scss/media";
