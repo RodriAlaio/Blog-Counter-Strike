@@ -26,10 +26,15 @@ body {
 
 //titulos principales de cada pagina
 .blockT__tituloUno--modificador {
-    color: #adb5bd;
+    color: #168aad;
     font-size: 6rem;
     @extend %tipografia;
     text-align: center;
+    margin-top: 35%;
+}
+.blockT__tituloUno {
+    margin-bottom: 45%;
+
 }
 //estilo de imagnes del index
 .imgIndex {
@@ -40,32 +45,52 @@ body {
 .imgIndex__img--modificador {
     max-width: 340px;
     max-height: 340px;
+    border-radius: 10%;
+
 }
 .imgIndex__img--modificador:hover{
-    transform: scale(1.5);
+    transform: scale(1.050);
+
+}
+//imagen de mercado
+.m4a4{
+    @extend %flexs;
+    justify-content: center;
+    justify-content: space-around;
+    border-radius: 10%;
+}
+.m4a4:hover{
+    transform: scale(1.050);
 
 }
 //estilos de los sbutitulos del index
 .subtitulo__h2--modificador {
-    color: #9999a1;
+    color: #168aad;
     font-size: 4rem;
     @extend %tipografia;
     text-align: center;
     margin-top: 3%;
 }
+.subFanpage{
+    color: #168aad;
+    font-size: 3rem;
+    @extend %tipografia;
+    text-align: center;
+}
 //estilo del texto
 p {
     @extend %tipografia;
-    font-size: 150%;
+    font-size: 120%;
     text-align: justify;
     padding: 20px;
-    color: #ced4da;
+    color: #34a0a4;
 }
 //video de index
 .videocs {
     position: relative;
     overflow: hidden;
     padding: 25%;
+    margin-top: 35%;
 
     iframe {
         position: absolute;
@@ -88,16 +113,18 @@ p {
     @extend %borde;
     margin-left: 5px;
     margin-right: 5px;
+    background-color: black;
+    
 
     th {
         font-size: 150%;
         color: #6096ba;
         @extend %tipografia;
-        @extend %borde;
+        border: 1px solid whitesmoke ;
         text-align: center;
     }
     td {
-        @extend %borde;
+        border: 1px solid whitesmoke ;
         @extend %tipografia;
         color: #6096ba;
     }
@@ -114,9 +141,10 @@ p {
 .imgg__Gaming--modificador {
     max-width: 30%;
     max-height: 30%;
+    border-radius: 10%;
 }
 .imgg__Gaming--modificador:hover{
-    transform: scale(1.5);
+    transform: scale(1.050);
 }
 //area de contacto
 .label{
@@ -127,6 +155,9 @@ p {
     margin-right: auto;
     @extend %tipografia;
     font-size: 150%;
+    color: #ced4da;
+}
+.pDeContacto{
     color: #ced4da;
 }
 //estilo de botones del formulario
@@ -140,12 +171,13 @@ p {
     background-color: black;
     color: whitesmoke;
 }
-//estilos del pie de pagina
+//estilos del pie de pagin
 .footer{
     background-color: black;
     text-align: center;
     width: 100%;
     margin-bottom: 0%;
     color: whitesmoke;
+
 }
 @import "../scss/media";

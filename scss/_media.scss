@@ -8,11 +8,10 @@
 }
 @media screen and (max-width: 1024px) {
     body {
-        background: url(none);
+        background: url(../img/img_grande5-min.jpg);
         background-repeat: no-repeat;
-        background-size: 100%;
+        background-size: 121%;
         margin: 0;
-        background-color: #2e3033;
         background-attachment: fixed;
     }
     #contenedor {
@@ -20,54 +19,80 @@
         margin-left: auto;
         margin-right: auto;
         border: #2e3033;
-        background-color: #2e3033;
     }
     .blockT__tituloUno--modificador {
-        color: $primary;
+        color: #168aad;
         
     }
+    .subFanpage{
+        color: #168aad;
+    }
     .subtitulo__h2--modificador {
-        color: $primary;
+        color: #168aad;
     }
     p{
-        color: $primary;
+        color: #3e64e2;
     }
-    .pe{
-        color:$primary;
+    .pDeContacto{
+        color:#ced4da;
+    }
+    .imgg__Gaming--modificador{
+        max-width: 45%;
+        max-height: 45%;
+        border-radius: 10%;
     }
     .imgg__Gaming--modificador:hover{
-        transform: (1.2);
+        transform: (none);
     }
     .imgIndex__img--modificador:hover{
-        transform: (1.2);
+        transform: (none);
     }
 }
 @media screen and (max-width: 768px) {
+    body {
+        background: url(../img/img_grande-min.jpg);
+        background-repeat: no-repeat;
+        background-size: 200%;
+        margin: 0;
+        background-attachment: fixed;
+    }
     #contenedor {
         margin-top: 0;
         margin-left: auto;
         margin-right: auto;
         border: #2e3033;
-        background-color: #2e3033;
+
+    }
+    .blockT__tituloUno {
+        margin-top: 50%;
+        margin-bottom: 50%;
+    
+    }
+    .imgg__Gaming--modificador{
+        max-width: 55%;
+        max-height: 55%;
+        border-radius: 10%;
     }
     .imgg__Gaming--modificador:hover{
-        transform: (1);
+        transform: (none);
     }
     .imgIndex__img--modificador:hover{
-        transform: (1);
+        transform: (none);
     }
     .blockT__tituloUno--modificador {
-        color: $primary;
-        
+        color: #00499c;  
+    }
+    .subFanpage{
+        color: #00499c;
     }
     .subtitulo__h2--modificador {
-        color: $primary;
+        color: #00499c;
     }
     p{
-        color: $primary;
+        color: #0151ff;
     }
-    .pe{
-        color:$primary;
+    .pDeContacto{
+        color:#ced4da;
     }
     .imgIndex {
         display: flex;
@@ -88,6 +113,24 @@
     }
 }
 @media screen and (max-width: 425px) {
+    body {
+        background: url(../img/img_mobile3-min.jpeg);
+        background-repeat: no-repeat;
+        background-size: 108%;
+        margin: 0;
+        background-attachment: fixed;
+    }
+    #contenedor {
+        margin-top: 0;
+        margin-left: auto;
+        margin-right: auto;
+        border: #2e3033;
+    }
+    .imgg__Gaming--modificador{
+        max-width: 85%;
+        max-height: 85%;
+        border-radius: 10%;
+    }
     #staticBackdrop {
         padding: 0px 0px;
         
@@ -97,18 +140,22 @@
     }
     .blockT__tituloUno--modificador{
         font-size: 3rem;
-        color: $primary;
+        color: #168aad;
+    }
+    .subFanpage{
+        color: #168aad;
+        font-size: 2rem;
     }
     .subtitulo__h2--modificador{
         font-size: 2rem;
-        color: $primary;
+        color: #168aad;
     }
     p{
         font-size: 98%;
-        color: $primary;
+        color: #4ccbf1;
     }
-    .pe{
-        color:$primary;
+    .pDeContacto{
+        color:#ced4da;
     }
     .imgIndex {
         display: flex;
@@ -138,4 +185,42 @@
     }
 
 }
-
+@media screen and (max-width: 375px){
+    body {
+        background: url(../img/img_mobile2-min.jpg);
+        background-repeat: no-repeat;
+        background-size: 122%;
+        margin: 0;
+        background-attachment: fixed;
+    }
+    .blockT__tituloUno--modificador{
+        color: #168aad;
+    }
+    .subFanpage{
+        color: #168aad;
+    }
+    .subtitulo__h2--modificador{
+        color: #168aad;
+    }
+    p{
+        color:#4ccbf1;
+    
+    }
+    .pDeContacto{
+        color:#ced4da;
+    }
+    .imgg__Gaming--modificador{
+        max-width: 85%;
+        max-height: 85%;
+        border-radius: 10%;
+    }
+}   
+@media screen and (max-width: 320px){
+    body {
+        background: url(../img/img_mobile2-min.jpg);
+        background-repeat: no-repeat;
+        background-size: 150%;
+        margin: 0;
+        background-attachment: fixed;
+    }
+}

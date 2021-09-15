@@ -16,7 +16,7 @@
 <body>
   <header class="col-sm-12 col-md-12 col-lg-12">
       <nav class="navbar navbar-expand-lg navbar-dark 
-      " style="background-color:black">
+      fixed-top" style="background-color:black">
           <div class="container-fluid">
             <a class="navbar-brand" href="index.html">Inicio</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -44,7 +44,8 @@
     </header>
     <div id="contenedor" class="container">
         <div class="blockT">
-          <h1 class="blockT__tituloUno blockT__tituloUno--modificador" >Counter Strike</h1>
+          <h1 class="blockT__tituloUno--modificador" >Counter Strike</h1>
+          <h2 class="subFanpage">Fan page</h2>
         </div>
         <div class="videocs">
             <iframe src="https://www.youtube.com/embed/edYCtaNueQY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -52,6 +53,10 @@
         <article>
             <div class="subtitulo">
             <h2 class="subtitulo__h2 subtitulo__h2--modificador">De que trata</h2>
+            <div class="imgIndex">
+              <img class="imgIndex__img imgIndex__img--modificador" src="img/img_gif2-min.gif" alt="gif bando terrorista">
+              
+          </div>
             </div>
             <p class="textoUno">Counter-Strike es un videojuego de disparos en primera persona multijugador (ya sea en LAN o en línea)
             Se trata de dos equipos, el equipos terrorista (TT) y el equipo antiterrorista (CT). 
@@ -118,16 +123,9 @@
           </article>  
   
     </div>
-    <footer>
+    <footer class="divFooter">
       <p class="footer"> Derechos Reservados | Rodrigo Alaio &copy;</p>
     </footer>
 <script src="js/bootstrap.min.js"></script>
-<script>
-        $(document).ready(function () {
-          $(".nav-link").click(function () {
-            $(".collapse").removeClass("show");
-          });
-        });
-</script>
 </body>
 </html>
